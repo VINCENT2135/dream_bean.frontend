@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import BeansContainer from './beansContainer'
 
-export default class App extends Component {
+ class App extends Component {
   render() {
     return (
       <div>
-        
+        <BeansContainer/> 
       </div>
     )
   }
@@ -13,4 +14,4 @@ export default class App extends Component {
 
 
 
-export default App 
+export default App;
