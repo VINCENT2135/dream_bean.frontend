@@ -1,17 +1,27 @@
-import React, { Component } from 'react'
-import BeansContainer from './beansContainer'
+import React from 'react';
 
- class App extends Component {
-  render() {
-    return (
-      <div>
-        <BeansContainer/> 
-      </div>
-    )
-  }
-}
+import BeansContainer from './BeansContainer';
 
 
+
+
+
+
+
+const App = () => {
+  return (
+  <div>
+  NAV BAR
+
+<BeansContainer/>
+
+  
+  </div>
+  );
+};
 
 
 export default App;
+
+
+
