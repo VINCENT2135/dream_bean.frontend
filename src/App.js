@@ -1,9 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { createStore, applyMiddleware } from 'redux'
+import {Provider} from "react-redux"
+import thunk from 'redux-thunk'  
+import { composeWithDevTools } from 'redux-devtools-extension';
 
-function App() {
+import { BrowserRouter as Router}  from  'react-router-dom' 
 
-  );
-}
 
-export default App;
+import App from './components/App'  
+
+let store = createStore(composeWithDevTools(applyMiddleware(thunk)
+))
+
+  ReactDOM.render(
+    <Provider store={store}>
+      <Router> 
+      <App/>
+      </Router>
+    </Provider>,
+    document.getElementById('root'))
+
