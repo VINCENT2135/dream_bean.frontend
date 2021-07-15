@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
+import {connect}  from 'react-redux' 
 
+import { fetchBeans } from '../actions/beansactions'
 
 class BeansContainer extends Component {
 
@@ -21,4 +23,5 @@ class BeansContainer extends Component {
 
 
 
-export default  BeansContainer;
+
+export default connect(null, { fetchBeans})(BeansContainer);
