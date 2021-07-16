@@ -18,6 +18,7 @@ class BeansContainer extends Component {
     render() {
         return (
             <div>
+                Beans Container 
               
             
                 <BeansForm/>

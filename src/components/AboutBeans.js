@@ -2,11 +2,7 @@ import React from 'react'
 
 
 
-
-
-
-
-const About = () => {
+const AboutBeans = () => {
     return (
     <div>
 <label> DreamBean About Page! </label>
@@ -14,5 +10,5 @@ const About = () => {
     );
 };
 
-export default About ;
+export default AboutBeans ;
 

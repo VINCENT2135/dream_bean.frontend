@@ -1,6 +1,8 @@
 import React from 'react';
 
-import BeansContainer from './BeansContainer';
+//import BeansContainer from './BeansContainer';
+
+import Router from './Router'
 
 
 
@@ -13,7 +15,7 @@ const App = () => {
   <div>
   NAV BAR
 
-<BeansContainer/>
+  <Router/> 
 
   
   </div>
