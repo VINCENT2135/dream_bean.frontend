@@ -6,18 +6,21 @@ import BeansForm from './BeansForm'
 
 class BeansContainer extends Component {
 
-
     componentDidMount()  { 
         this.props.fetchBeans()
     }
 
 
 
+
+
+
     render() {
         return (
             <div>
-         
-                <BeansForm/> 
+              
+            
+                <BeansForm/>
             </div>
         )
     }
@@ -26,4 +29,11 @@ class BeansContainer extends Component {
 
 
 
+
+
+
+
+
 export default connect(null, { fetchBeans})(BeansContainer);
+
+

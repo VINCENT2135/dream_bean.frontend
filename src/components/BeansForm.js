@@ -3,8 +3,6 @@ import { connect } from 'react-redux'
 import {addBeans} from '../actions/beansactions'
 
 
-
-
  class BeansForm extends Component {
 
 state = {
@@ -12,7 +10,6 @@ state = {
     origin: ''
 
 }
-
 
 handleChange = e => {
     const { name , value } = e.target
@@ -22,24 +19,32 @@ handleChange = e => {
     })
 }
  
+
+
+
+
+
 handleSubmit = e => {
     e.preventDefault()
     this.props.addBeans(this.state)
 }
 
-  
+
+    
     render() {
         return (
-            <form>
+            <form onSubmit={this.handleSubmit}>
+                
                 <label> Name: </label>
                 <br/>
                 <input type="text" value={this.state.title} onChange={this.handleChange} name="name"/>
-                <br/>
+                <br/>  
                 <label> Origin: </label>
                 <br/>
                 <input type="text" value={this.state.description} onChange={this.handleChange} name="origin"/>
-                <br/>
+                <br/> 
                 <input type='submit' value="Create Bean"/> 
+                <br/>
             </form> 
            
         )
