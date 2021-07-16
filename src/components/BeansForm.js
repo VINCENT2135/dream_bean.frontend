@@ -10,9 +10,6 @@ state = {
 
 }
 
-
-
-
   
     render() {
         return (
@@ -22,6 +19,7 @@ state = {
                 <input type="text" value={this.state.title} onChange={this.handleChange} name="name"/>
                 <br/>
                 <label> Origin: </label>
+            
              
               
            
