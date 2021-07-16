@@ -7,6 +7,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 
 import {rootReducer} from './reducers/rootReducer'
 import App from './components/App'  
+import { BrowserRouter as Router}  from  'react-router-dom' 
 
 let store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)
 ))
@@ -14,7 +15,10 @@ let store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)
   ReactDOM.render(
     <Provider store={store}>
      
+     <Router>
       <App/>
+     </Router>
+      
      
     </Provider>,
     document.getElementById('root'))
