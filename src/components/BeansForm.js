@@ -29,7 +29,8 @@ handleChange = e => {
                 <input type="text" value={this.state.title} onChange={this.handleChange} name="name"/>
                 <br/>
                 <label> Origin: </label>
-                <input type="text" value={this.state.title} onChange={this.handleChange} name="origin"/>
+                <br/>
+                <input type="text" value={this.state.description} onChange={this.handleChange} name="origin"/>
             
             </form> 
            
