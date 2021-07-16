@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {connect}  from 'react-redux' 
 
 import { fetchBeans } from '../actions/beansactions'
+import BeansForm from './BeansForm'
 
 class BeansContainer extends Component {
 
@@ -15,7 +16,8 @@ class BeansContainer extends Component {
     render() {
         return (
             <div>
-                Beans Container 
+         
+                <BeansForm/> 
             </div>
         )
     }

@@ -10,6 +10,16 @@ state = {
 
 }
 
+
+handleChange = e => {
+    const { name , value } = e.target
+
+    this.setState({
+        [name]: value 
+    })
+}
+ 
+
   
     render() {
         return (
@@ -19,10 +29,8 @@ state = {
                 <input type="text" value={this.state.title} onChange={this.handleChange} name="name"/>
                 <br/>
                 <label> Origin: </label>
+                <input type="text" value={this.state.title} onChange={this.handleChange} name="origin"/>
             
-             
-              
-           
             </form> 
            
         )
