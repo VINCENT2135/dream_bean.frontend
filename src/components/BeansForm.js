@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import {addBeans} from '../actions/beansactions'
+
 
 
 
@@ -43,4 +46,4 @@ handleSubmit = e => {
     }
 }
 
-export default BeansForm  
+export default connect(null, {addBeans})(BeansForm);
