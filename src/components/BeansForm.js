@@ -19,6 +19,10 @@ handleChange = e => {
     })
 }
  
+handleSubmit = e => {
+    e.preventDefault()
+    this.props.addBeans(this.state)
+}
 
   
     render() {
@@ -31,7 +35,8 @@ handleChange = e => {
                 <label> Origin: </label>
                 <br/>
                 <input type="text" value={this.state.description} onChange={this.handleChange} name="origin"/>
-            
+                <br/>
+                <input type='submit' value="Create Bean"/> 
             </form> 
            
         )
