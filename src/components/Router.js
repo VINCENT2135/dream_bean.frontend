@@ -5,7 +5,7 @@ import HomePage from '../components/HomePage'
 import BeansContainer from './BeansContainer'
 import AboutBeans from '../components/AboutBeans'
 import NavBar from './NavBar' 
-//mport BeansList from './components/BeansList'
+//import BeansList from './components/BeansList'
 
 const Router = () => {
     return (
