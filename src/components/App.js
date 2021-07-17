@@ -5,8 +5,11 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css'
 
 
+
 import Router from './Router'
 import './styles.css'
+import { Navbar } from 'react-bootstrap'
+
 
 
 
@@ -16,10 +19,17 @@ import './styles.css'
 
 const App = () => {
   return (
-  <div>
-  NAV BAR
+  <div className="App">
+    <Navbar bg="dark" variant="dark">
+      <Navbar.Brand> 
 
+       Dream Bean Navigation 
+      </Navbar.Brand>
+  
   <Router/> 
+
+  </Navbar>
+
 
   
   </div>
