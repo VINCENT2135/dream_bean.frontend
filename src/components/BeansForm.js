@@ -43,7 +43,7 @@ handleSubmit = e => {
                 <br/>
                 <input type="text" value={this.state.description} onChange={this.handleChange} name="origin"/>
                 <br/> 
-                <input type='submit' value="Create Bean"/> 
+                <input type='submit' value="Add A Bean!"/> 
                 <br/>
             </form> 
            
