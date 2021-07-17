@@ -6,6 +6,8 @@ const HomePage = () => {
     return (
     <div>
 <h1> Dream Bean Home Page  </h1>
+
+
     </div>
     );
 };

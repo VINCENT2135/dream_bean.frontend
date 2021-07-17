@@ -1,0 +1,45 @@
+
+#documenter_sidebar #documenter_logo{
+	display: block;
+height: 40px;
+background-repeat: no-repeat;
+}
+#documenter_sidebar ol{
+	font-size:12px;
+	font-weight:700;
+	min-height:150px;
+	height:75%;
+	overflow:auto;
+}
+
+#documenter_sidebar ol li{
+	text-align:right;
+	padding:0;
+}
+#documenter_sidebar ol a{
+	display:block;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #aaa;
+	padding:6px 15px 7px 0;
+	text-align:right;
+}
+#documenter_sidebar ol a:hover,#documenter_sidebar ol a.current{
+	-webkit-text-shadow:none;
+	-moz-text-shadow:none;
+	text-shadow:none;
+	text-decoration:none;
+}
+#documenter_sidebar ol li ol{
+	border-top:0;
+	font-size:10px;
+	min-height:10px;
+	height:auto;
+	overflow:auto;
+	margin:0;
+	display:none;
+}
+#documenter_sidebar ol li ol li a{
+	display:block;
+	padding:4px 15px 5px 0;
+	text-align:right;
+}
