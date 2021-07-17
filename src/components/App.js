@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 import Router from './Router'
 import './styles.css'
-import { Navbar } from 'react-bootstrap'
+import { Nav, Navbar} from 'react-bootstrap'
 
 
 
@@ -22,15 +22,20 @@ const App = () => {
   <div className="App">
     <Navbar bg="dark" variant="dark">
       <Navbar.Brand> 
-
-       Dream Bean Navigation 
+      
+      DreamBean
       </Navbar.Brand>
+<Nav>
+<Nav.Link href="/home">HomePage</Nav.Link>
+<Nav.Link href="/about">About</Nav.Link>
+<Nav.Link href="/beans">Beans</Nav.Link>
+
   
-  <Router/> 
+  </Nav>  
+     
+    </Navbar>
 
-  </Navbar>
-
-
+      <Router/> 
   
   </div>
   );
