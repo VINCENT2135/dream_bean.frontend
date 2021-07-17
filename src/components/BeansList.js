@@ -9,6 +9,7 @@ import './styles.css';
 const BeansList = ({beans}) => {
     return (
     <div>
+        <br/>
        
 {beans.map(beans => <ul><li key={beans.id}>{beans.name} - {beans.origin}</li></ul>)}
     </div>
