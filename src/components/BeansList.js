@@ -6,16 +6,20 @@ import './styles.css';
 
 
 
+
+
 const BeansList = ({beans}) => {
     return (
     <div>
+      <h1>Throw in a Bean!</h1> 
 <br/>
-Single Origin Species 
+
 <br/> 
+
 
         <br/>
        
-{beans.map(beans => <ul><li key={beans.id}>{beans.name} - {beans.origin}</li></ul>)}
+{beans.map(beans => <ul> <li key={beans.id}>{beans.name} - {beans.origin}</li> </ul>)}
     </div>
     );
 };
@@ -25,3 +29,7 @@ const mapStateToProps = state => {
 }
 
 export default connect(mapStateToProps)(BeansList); 
+
+
+
+

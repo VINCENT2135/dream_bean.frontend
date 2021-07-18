@@ -3,8 +3,9 @@ import {Switch, Route } from "react-router-dom"
 
 import HomePage from '../components/HomePage'
 import BeansContainer from './BeansContainer'
-import AboutBeans from '../components/AboutBeans'
+import AboutBeans from './OriginContainer'
 import Nav from './Nav' 
+//import Heritage from './Heritage'
 //import BeansList from './components/BeansList'
 
 const Router = () => {
@@ -13,6 +14,7 @@ const Router = () => {
         <Switch> 
         <Route exact path='/' component={Nav} /> 
             <Route exact path='/home' component={HomePage} /> 
+
             <Route exact path='/about' component={AboutBeans} /> 
         <Route exact path='/beans' component={BeansContainer} />   
         </Switch>

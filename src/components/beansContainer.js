@@ -5,6 +5,7 @@ import { fetchBeans } from '../actions/beansactions'
 import BeansForm from './BeansForm'
 import BeansList from './BeansList'
 
+
 class BeansContainer extends Component {
 
     componentDidMount()  { 
@@ -19,8 +20,7 @@ class BeansContainer extends Component {
     render() {
         return (
             <div>
-              
-               <BeansList/> 
+               <BeansList/>
                <br/> 
                 <BeansForm/>
             </div>

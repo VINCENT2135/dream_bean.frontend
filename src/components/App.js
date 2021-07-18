@@ -3,12 +3,13 @@ import React from 'react';
 
 //import BeansContainer from './BeansContainer';
 import 'bootstrap/dist/css/bootstrap.css'
+import Router from './Router' 
 
 
 
-import Router from './Router'
 import './styles.css'
 import { Nav, Navbar} from 'react-bootstrap'
+
 
 
 
@@ -27,15 +28,16 @@ const App = () => {
       </Navbar.Brand>
 <Nav>
 <Nav.Link href="/home">HomePage</Nav.Link>
-<Nav.Link href="/about">About</Nav.Link>
-<Nav.Link href="/beans">Coffee</Nav.Link>
+<Nav.Link href="/about">Origins</Nav.Link>
+<Nav.Link href="/beans">Add A Bean</Nav.Link>
 
   
   </Nav>  
-     
+
     </Navbar>
 
-      <Router/> 
+    <Router/>
+
   
   </div>
   );
