@@ -7,6 +7,9 @@ function NavBar() {
         <div>
 DreamBean
 
+<br/>
+
+
 
 
 <body>
