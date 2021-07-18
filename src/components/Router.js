@@ -2,8 +2,9 @@ import React from 'react'
 import {Switch, Route } from "react-router-dom"
 
 import HomePage from '../components/HomePage'
-import BeansContainer from './BeansContainer'
-import AboutBeans from './OriginContainer'
+import BeansContainer from '../containers/BeansContainer'
+import OriginContainer from '../containers/OriginContainer'
+import About from './AboutUs'
 import Nav from './Nav' 
 //import Heritage from './Heritage'
 //import BeansList from './components/BeansList'
@@ -14,9 +15,9 @@ const Router = () => {
         <Switch> 
         <Route exact path='/' component={Nav} /> 
             <Route exact path='/home' component={HomePage} /> 
-
-            <Route exact path='/about' component={AboutBeans} /> 
-        <Route exact path='/beans' component={BeansContainer} />   
+            <Route exact path='/about' component={About} />
+             <Route exact path='/origin' component={OriginContainer} /> 
+            <Route exact path='/beans' component={BeansContainer} />   
         </Switch>
 
     </div>

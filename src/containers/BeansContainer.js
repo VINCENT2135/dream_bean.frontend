@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import {connect}  from 'react-redux' 
 
 import { fetchBeans } from '../actions/beansactions'
-import BeansForm from './BeansForm'
-import BeansList from './BeansList'
+import BeansForm from '../components/BeansForm'
+import BeansList from '../components/BeansList'
 
 
 class BeansContainer extends Component {

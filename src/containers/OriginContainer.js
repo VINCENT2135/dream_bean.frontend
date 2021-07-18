@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import {connect}  from 'react-redux' 
 
 import { fetchBeans } from '../actions/beansactions'
-import Heritage from './Heritage'
+import OriginImage from '../components/OriginImage'
+
 
 
  class OriginContainer extends Component {    
@@ -14,7 +15,7 @@ import Heritage from './Heritage'
     render() {
         return (
             <div>
-              <Heritage/>
+           <OriginImage/>
             </div>
         )
     }
@@ -22,3 +23,5 @@ import Heritage from './Heritage'
 
 
 export default connect(null, {fetchBeans})(OriginContainer);
+
+

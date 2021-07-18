@@ -11,13 +11,6 @@ import './styles.css'
 import { Nav, Navbar} from 'react-bootstrap'
 
 
-
-
-
-
-
-
-
 const App = () => {
   return (
   <div className="App">
@@ -28,9 +21,9 @@ const App = () => {
       </Navbar.Brand>
 <Nav>
 <Nav.Link href="/home">HomePage</Nav.Link>
-<Nav.Link href="/about">Origins</Nav.Link>
+<Nav.Link href="/origins">Origins</Nav.Link>
 <Nav.Link href="/beans">Add A Bean</Nav.Link>
-
+<Nav.Link href="/about">About Us</Nav.Link>
   
   </Nav>  
 
