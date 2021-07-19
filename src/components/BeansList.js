@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import img9 from '../images/christina-rumpf.jpg'
 import './styles.css';
 
 
@@ -12,6 +13,8 @@ const BeansList = ({beans}) => {
     return (
     <div>
       <h1>Throw in a Bean!</h1> 
+
+      <img src={img9} className="photo" alt=""/>
 <br/>
 
 <br/> 

@@ -15,6 +15,7 @@ import OriginImage from '../components/OriginImage'
     render() {
         return (
             <div>
+            
            <OriginImage/>
             </div>
         )

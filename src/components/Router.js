@@ -5,7 +5,7 @@ import HomePage from '../components/HomePage'
 import BeansContainer from '../containers/BeansContainer'
 import OriginContainer from '../containers/OriginContainer'
 import About from './AboutUs'
-import Nav from './Nav' 
+import Nav from './DefaultNav' 
 //import Heritage from './Heritage'
 //import BeansList from './components/BeansList'
 

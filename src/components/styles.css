@@ -1,3 +1,13 @@
 .bg-myBean{
 	background-color:rosybrown;
   }
+
+  .photo {
+    height: 200px;
+    width: 200px;
+  }
+
+  .photo2 {
+    height: 600px;
+    width: 500px;
+  }
