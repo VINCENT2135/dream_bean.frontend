@@ -18,7 +18,7 @@ const BeansList = ({beans}) => {
 <br/>
 
 <br/> 
-
+<h2> Current Beans </h2>
 
         <br/>
        
