@@ -9,39 +9,25 @@ import img6 from '../images/alan-graph.jpg'
 
 import './styles.css'
 
-
-
-
-
-
-
-
 const Heritage = ({beans}) => {
-    return (
-    <div>
+return (
+<div>
 
-        <h1>Places Of  Origin</h1>
-        <img src={img1} className="photo" alt=""/>
-    
-        <img src={img2} className="photo" alt=""/>
-        <img src={img5} className="photo" alt=""/>
-        <br/>
-        <img src={img3} className="photo" alt=""/>
-        <img src={img4} className="photo" alt=""/>
-        <img src={img6} className="photo" alt=""/>
-        
-
-  
+<h1>Places Of  Origin</h1>
+<img src={img1} className="photo" alt=""/>
+<img src={img2} className="photo" alt=""/>
+<img src={img5} className="photo" alt=""/>
 <br/>
-
+<img src={img3} className="photo" alt=""/>
+<img src={img4} className="photo" alt=""/>
+<img src={img6} className="photo" alt=""/>
+<br/>
 <br/> 
-
-
-        <br/>
+<br/>
        
 {beans.map(beans => <ul> <li key={beans.id}>{beans.origin}</li> </ul>)}
-    </div>
-    );
+</div>
+);
 };
 
 const mapStateToProps = state => {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {connect}  from 'react-redux' 
-
 import { fetchBeans } from '../actions/beansactions'
+import IncrementButton from '../components/IncrementButton'
 import OriginImage from '../components/OriginImage'
 
 
@@ -12,11 +12,16 @@ import OriginImage from '../components/OriginImage'
     this.props.fetchBeans()
 }
 
+
+
     render() {
         return (
             <div>
-            
+      
            <OriginImage/>
+         
+         <IncrementButton/>
+
             </div>
         )
     }
@@ -24,5 +29,4 @@ import OriginImage from '../components/OriginImage'
 
 
 export default connect(null, {fetchBeans})(OriginContainer);
-
 

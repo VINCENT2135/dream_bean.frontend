@@ -5,36 +5,21 @@ import { fetchBeans } from '../actions/beansactions'
 import BeansForm from '../components/BeansForm'
 import BeansList from '../components/BeansList'
 
-
 class BeansContainer extends Component {
 
-    componentDidMount()  { 
+    componentDidMount()  {
         this.props.fetchBeans()
     }
-
-
-
-
-
 
     render() {
         return (
             <div>
-               <BeansList/>
-               <br/> 
-                <BeansForm/>
+              <BeansList/>
+              <br/>
+              <BeansForm/>
             </div>
         )
     }
 }
 
-
-
-
-
-
-
-
-
 export default connect(null, { fetchBeans})(BeansContainer);
-
