@@ -5,6 +5,7 @@ class Varieties extends Component {
         return (
             <div>
              <h1> Coffee Varieties </h1>
+
           
             </div>
         )

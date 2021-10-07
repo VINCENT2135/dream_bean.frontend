@@ -6,6 +6,7 @@ export const beansReducer = (beans = [], action) => {
             return action.payload
         case 'ADD_BEANS': 
             return [...beans, action.payload]
+            
         default:
             return beans
     }
