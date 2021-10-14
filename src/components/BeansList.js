@@ -13,7 +13,14 @@ const BeansList = ({beans}) => {
     <img src={img9} className="photo" alt=""/>
     <img src={img2} className="photo" alt=""/>
     <br/>
-    <br/> 
+    <br/> <div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
     <h2> Current Beans </h2>
     <br/>
     {beans.map(beans => <ul> <li key={beans.id}>{beans.name} - {beans.origin}</li> </ul>)}
