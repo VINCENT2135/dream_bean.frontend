@@ -5,7 +5,7 @@ import BeansContainer from '../containers/BeansContainer'
 import OriginContainer from '../containers/OriginContainer'
 import About from './AboutUs'
 import Nav from './DefaultPage'
-import Varieties from './Varieties'
+import VarietyComponent from './VarietyComponent'
 
 const Router = () => {
     return (
@@ -16,7 +16,7 @@ const Router = () => {
                 <Route exact path='/about' component={About} />
                 <Route exact path='/origins' component={OriginContainer} /> 
                 <Route exact path='/beans' component={BeansContainer} />   
-                <Route exact path='./varieties' component={Varieties} />
+                <Route exact path='./varieties' component={VarietyComponent} />
             </Switch>
         </div>
     );
