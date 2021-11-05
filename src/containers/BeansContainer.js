@@ -14,9 +14,10 @@ class BeansContainer extends Component {
     render() {
         return (
             <div>
-              <BeansList/>
+              
               <br/>
               <BeansForm/>
+              
             </div>
         )
     }
