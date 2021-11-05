@@ -17,7 +17,7 @@ class BeansContainer extends Component {
               
               <br/>
               <BeansForm/>
-              
+              <IncrementButton/>
             </div>
         )
     }
